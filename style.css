@@ -924,6 +924,43 @@ img.alignright {
 	}
 }
 
+a.back_to_top {
+	text-decoration: none;
+	position: fixed;
+	bottom: 50%;
+	right: 60px;
+	width: 50px;
+	line-height: 36px;
+	font-size: 18px;
+	text-align: center;
+	display: none;
+	border: 1px solid #eee;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+
+a.back_to_top span {
+	color: #888;
+}
+
+a.back_to_top:hover {
+	cursor: pointer;
+	border-color: #999;
+}
+
+a.back_to_top:hover span {
+	color: #555;
+}
+
+@media print, screen and (max-width: 580px) {
+	.back_to_top {
+		display: none !important;
+	}
+}
+
 .about {
 	width: 100%;
 }
+
